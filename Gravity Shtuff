@@ -1,0 +1,15 @@
+#By Alexander Felix, 11/5/2021, it does stuff
+
+print("This program calculates the distance a suspended object falls","given a gravity and time")
+
+gravity = int(input("What is the value of gravity in pixels per second "))
+
+fps = int(input("What is the FPS "))
+
+frames = int(input("How many frames are in the game "))
+
+time = frames/fps
+
+distance = 1/2 * gravity * time ** 2
+
+print("It will drop", distance, "pixels in", time, "seconds")
